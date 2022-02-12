@@ -1,0 +1,1 @@
+declare type ReactFCWithLayout<T = any> = React.FC<T> & {Layout: React.FC, isPrivate?: boolean}

@@ -1,0 +1,48 @@
+@use 'sass:math';
+
+.col {
+  padding: 0 4px;
+}
+
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    flex: 0 0 calc(100% * #{math.div($i, 12)});
+    max-width: calc(100% * #{math.div($i, 12)});
+  }
+}
+
+@media screen and (min-width: 678px) and (max-width: 1199px) {
+  .col {
+    padding: 0 8px;
+  }
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      flex: 0 0 calc(100% * #{math.div($i, 12)});
+      max-width: calc(100% * #{math.div($i, 12)});
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .col {
+    padding: 0 12px;
+  }
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      flex: 0 0 calc(100% * #{math.div($i, 12)});
+      max-width: calc(100% * #{math.div($i, 12)});
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .col {
+    padding: 0 12px;
+  }
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      flex: 0 0 calc(100% * #{math.div($i, 12)});
+      max-width: calc(100% * #{math.div($i, 12)});
+    }
+  }
+}

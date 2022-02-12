@@ -1,0 +1,66 @@
+@for $i from 1 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i * 1rem};
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i * 1rem};
+  }
+  .ml-#{$i} {
+    margin-left: #{$i * 1rem};
+  }
+  .mr-#{$i} {
+    margin-right: #{$i * 1rem};
+  }
+}
+
+.skeleton-wrap {
+  margin: 0rem 2rem;
+  max-width: 1000px;
+  border-radius: 4px;
+  // background: #fff;
+  padding: 1rem;
+  width: 100%;
+  // box-shadow: 0 0 0 1px rgba(9, 9, 9, 0.1);
+}
+
+.skeleton {
+  border-radius: 4px;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 6px;
+  background: linear-gradient(
+      -90deg,
+      rgb(235, 235, 240) 0%,
+      rgb(255, 255, 255) 50%,
+      rgb(235, 235, 240) 100%
+    )
+    0% 0% / 400% 400%;
+  animation: 3s ease-in-out 0s infinite normal none running load;
+}
+
+@keyframes load {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.inline-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.color-red {
+  color: red;
+}
