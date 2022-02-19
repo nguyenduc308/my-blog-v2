@@ -14,11 +14,6 @@
       "npm run format"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged --allow-empty"
-    }
-  },
   "dependencies": {
     "@editorjs/code": "^2.7.0",
     "@editorjs/delimiter": "^1.2.0",
@@ -54,7 +49,6 @@
     "babel-plugin-styled-components": "^1.13.2",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "husky": "^4.3.8",
     "lint-staged": "^11.1.2",
     "nodemon": "^2.0.12",
     "postcss": "^8.3.6",
