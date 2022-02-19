@@ -10,3 +10,4 @@ server/node_modules
 server/package-lock.json
 server/yarn.lock
 server/upload/*
+server/.env
