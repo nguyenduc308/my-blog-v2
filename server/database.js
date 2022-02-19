@@ -64,7 +64,7 @@ function setupRelations({ models }) {
   category_blog.belongsTo(blog, { foreignKey: 'blog_id' });
   category_blog.belongsTo(category, { foreignKey: 'category_id' });
 
-  blog.hasOne(block, {
+  blog.hasMany(block, {
     as: 'blocks',
     foreignKey: 'blog_id',
     onDelete: 'CASCADE',
@@ -143,7 +143,7 @@ function setupRelations({ models }) {
 (async () => {
   try {
     setupRelations(sequelize);
-    await sequelize.sync({ force: false });
+    await sequelize.sync({ force: true });
   } catch (e) {
     console.log(e);
   }

@@ -12,8 +12,12 @@ module.exports = (sequelize) => {
       },
       data: {
         allowNull: false,
-        type: DataTypes.JSON,
+        type: DataTypes.TEXT,
       },
+      index: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+      }
     },
     {
       timestamps: false,

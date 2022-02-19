@@ -39,7 +39,7 @@ class AuthController {
           httpOnly: true,
           secure: process.env.NODE_ENV === 'production',
           maxAge: 24 * 60 * 60,
-          domain: 'duclux.com'
+          domain:  process.env.FE_DOMAIN
         }),
       });
 
@@ -99,7 +99,7 @@ class AuthController {
           httpOnly: true,
           secure: process.env.NODE_ENV === 'production',
           maxAge: 24 * 60 * 60,
-          domain: 'duclux.com'
+          domain: process.env.FE_DOMAIN
         }),
       });
 

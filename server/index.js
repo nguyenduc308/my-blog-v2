@@ -14,7 +14,7 @@ async function assertDatabaseConnectionOk() {
     await database.authenticate();
     console.log('Database connection OK!');
   } catch (error) {
-    console.log('Unable to connect to the database:');
+    console.log('Unable to connect to the database:', error);
     process.exit(1);
   }
 }
